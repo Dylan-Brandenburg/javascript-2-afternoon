@@ -142,12 +142,18 @@ user2.email= 'tyler.mcginnis@devmounta.in'
 
 
 
-
 /*
   Now call your alertHello and logHello methods.
 */
 
-//Code Here
+var methodCollection = {
+  alertHello(){
+    alert("hello")
+  },
+  logHello(){
+    console.log("hello")
+  }
+}
 
 
 
@@ -158,7 +164,16 @@ user2.email= 'tyler.mcginnis@devmounta.in'
   Return a new object with all of the information that you passed in.
 */
 
-//Code Here
+function makePerson(name, birthday,ssn){
+  person= {
+    name,
+    birthday,
+    ssn,
+  }
+  return person
+};
+
+makePerson("Otis","augest","100")
 
 
 
@@ -169,6 +184,14 @@ user2.email= 'tyler.mcginnis@devmounta.in'
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
-//Code Here
+function makeCard(cardNumber, expirationDate, securityCode){
+  creditCard= {
+    cardNumber, 
+    expirationDate,
+    securityCode
+  }
+  return creditCard;
+}
+makeCard(1000,"10/20",281)
 
 
